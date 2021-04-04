@@ -1,11 +1,21 @@
-1617527523162	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\alcen\\AppData\\Local\\Temp\\rust_mozprofileJO4hB8"
+1617561429711	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\alcen\\AppData\\Local\\Temp\\rust_mozprofileBKIoA7"
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
-1617527528999	Marionette	INFO	Listening on port 58065
-1617527529511	Marionette	WARN	TLS certificate errors will be ignored for this session
+1617561435497	Marionette	INFO	Listening on port 61701
+1617561435637	Marionette	WARN	TLS certificate errors will be ignored for this session
 JavaScript warning: https://www.fidelidade.pt/PT/particulares/Auto/Simuladores/Automovel/Paginas/default.aspx, line 285: unreachable code after return statement
-JavaScript warning: https://www.fidelidade.pt/_layouts/sp.ribbon.js?rev=F%2BUEJ66rbXzSvpf7nN69wQ%3D%3D, line 2: unreachable code after return statement
-1617527554985	Marionette	INFO	Stopped listening on port 58065
+1617561444282	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:231:19
+TimedPromise@chrome://marionette/content/sync.js:216:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:433:10
+webdriverClickElement@chrome://marionette/content/interaction.js:179:31
+1617561444709	Marionette	INFO	Stopped listening on port 61701
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
