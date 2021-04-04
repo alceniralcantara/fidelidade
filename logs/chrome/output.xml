@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20210404 16:06:57.682" rpa="false">
+<suite id="s1" name="Casos" source="A:\testes\fidelidade\casos.robot">
+<test id="s1-t1" name="TC01 - Simulação com Matricula Válida: 05-DE-82">
+<kw name="Open Browser" library="SeleniumLibrary" type="setup">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${fidelidade}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20210404 16:06:58.151" level="INFO">Opening browser 'Chrome' to base url 'https://www.fidelidade.pt/PT/particulares/Auto/Simuladores/Automovel/Paginas/default.aspx'.</msg>
+<status status="PASS" starttime="20210404 16:06:58.150" endtime="20210404 16:07:08.663"></status>
+</kw>
+<kw name="Inciando o Teste" library="setup">
+<kw name="Validação de Página Principal Carregada" library="setup">
+<kw name="Aguardar pelo Elemento Iframe" library="setup">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:08.687" endtime="20210404 16:07:08.948"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:08.686" endtime="20210404 16:07:08.948"></status>
+</kw>
+<kw name="Selecionar o Iframe" library="setup">
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<msg timestamp="20210404 16:07:08.950" level="INFO">Selecting frame 'xpath://*[@id='Simulator']'.</msg>
+<status status="PASS" starttime="20210404 16:07:08.949" endtime="20210404 16:07:09.033"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:08.949" endtime="20210404 16:07:09.033"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>css:.Bold</arg>
+</arguments>
+<msg timestamp="20210404 16:07:09.063" level="INFO">Current page contains element 'css:.Bold'.</msg>
+<status status="PASS" starttime="20210404 16:07:09.033" endtime="20210404 16:07:09.064"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Qual é a sua matrícula?</arg>
+</arguments>
+<msg timestamp="20210404 16:07:09.232" level="INFO">Current page contains text 'Qual é a sua matrícula?'.</msg>
+<status status="PASS" starttime="20210404 16:07:09.064" endtime="20210404 16:07:09.232"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:08.686" endtime="20210404 16:07:09.232"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:08.685" endtime="20210404 16:07:09.233"></status>
+</kw>
+<kw name="Buscando a Matricula" library="setup">
+<kw name="Aguardar pelo Elemento Iframe" library="setup">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:09.238" endtime="20210404 16:07:09.293"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:09.237" endtime="20210404 16:07:09.294"></status>
+</kw>
+<kw name="Selecionar o Iframe" library="setup">
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<msg timestamp="20210404 16:07:09.296" level="INFO">Selecting frame 'xpath://*[@id='Simulator']'.</msg>
+<status status="PASS" starttime="20210404 16:07:09.295" endtime="20210404 16:07:09.340"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:09.294" endtime="20210404 16:07:09.340"></status>
+</kw>
+<kw name="Clicar no Campo de Matricula" library="setup">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@class="OSFillParent"]</arg>
+</arguments>
+<msg timestamp="20210404 16:07:09.342" level="INFO">Clicking element 'xpath://input[@class="OSFillParent"]'.</msg>
+<status status="PASS" starttime="20210404 16:07:09.342" endtime="20210404 16:07:09.640"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:09.341" endtime="20210404 16:07:09.641"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:09.236" endtime="20210404 16:07:09.641"></status>
+</kw>
+<kw name="Inserindo a Matricula" library="setup">
+<arguments>
+<arg>${TC01}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@class="OSFillParent"]</arg>
+<arg>${matricula}</arg>
+</arguments>
+<msg timestamp="20210404 16:07:09.648" level="INFO">Typing text '05DE82' into text field 'xpath://input[@class="OSFillParent"]'.</msg>
+<status status="PASS" starttime="20210404 16:07:09.647" endtime="20210404 16:07:09.795"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:09.646" endtime="20210404 16:07:09.796"></status>
+</kw>
+<kw name="Validando a Matricula" library="setup">
+<kw name="Clicar em Seguinte" library="setup">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@value="Seguinte"]</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:09.798" endtime="20210404 16:07:09.841"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>xpath://input[@disabled="disabled"]</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:09.841" endtime="20210404 16:07:12.424"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@value="Seguinte"]</arg>
+</arguments>
+<msg timestamp="20210404 16:07:12.425" level="INFO">Clicking element 'xpath://*[@value="Seguinte"]'.</msg>
+<status status="PASS" starttime="20210404 16:07:12.424" endtime="20210404 16:07:12.653"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:09.797" endtime="20210404 16:07:12.654"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:09.796" endtime="20210404 16:07:12.654"></status>
+</kw>
+<kw name="Validação de Matricula Válida" library="setup">
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>xpath://input[@disabled="disabled"]</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:12.662" endtime="20210404 16:07:12.728"></status>
+</kw>
+<kw name="Page Should Not Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<arguments>
+<arg>xpath://input[@disabled="disabled"]</arg>
+</arguments>
+<msg timestamp="20210404 16:07:12.781" level="INFO">Current page does not contain element 'xpath://input[@disabled="disabled"]'.</msg>
+<status status="PASS" starttime="20210404 16:07:12.728" endtime="20210404 16:07:12.781"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:12.661" endtime="20210404 16:07:12.781"></status>
+</kw>
+<kw name="Validação da Página de Cotação de Seguro" library="setup">
+<kw name="Aguardar a Página por 2s" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210404 16:07:14.797" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210404 16:07:12.783" endtime="20210404 16:07:14.797"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:12.783" endtime="20210404 16:07:14.797"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@class='HeaderContainer ResultsHeader']</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:14.798" endtime="20210404 16:07:17.423"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath://*[@class='HeaderContainer ResultsHeader']</arg>
+</arguments>
+<msg timestamp="20210404 16:07:17.523" level="INFO">Current page contains element 'xpath://*[@class='HeaderContainer ResultsHeader']'.</msg>
+<status status="PASS" starttime="20210404 16:07:17.423" endtime="20210404 16:07:17.523"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:12.782" endtime="20210404 16:07:17.523"></status>
+</kw>
+<kw name="Validação Cotação Matrícula 05-DE-82" library="setup">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Este é um exemplo de pré-simulação para o veículo FORD Fiesta</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:17.532" endtime="20210404 16:07:17.657"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Este é um exemplo de pré-simulação para o veículo FORD Fiesta</arg>
+</arguments>
+<msg timestamp="20210404 16:07:17.962" level="INFO">Current page contains text 'Este é um exemplo de pré-simulação para o veículo FORD Fiesta'.</msg>
+<status status="PASS" starttime="20210404 16:07:17.657" endtime="20210404 16:07:17.963"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:17.531" endtime="20210404 16:07:17.963"></status>
+</kw>
+<kw name="Finalizando o Teste" library="setup">
+<kw name="Tirar Print da Tela" library="setup">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210404 16:07:18.281" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210404 16:07:17.965" endtime="20210404 16:07:18.281"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:17.964" endtime="20210404 16:07:18.281"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:17.964" endtime="20210404 16:07:18.282"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210404 16:07:18.287" endtime="20210404 16:07:21.216"></status>
+</kw>
+<tags>
+<tag>TC01 - Matricula Válida: 05-DE-82</tag>
+</tags>
+<status status="PASS" starttime="20210404 16:06:58.148" endtime="20210404 16:07:21.219" critical="yes"></status>
+</test>
+<test id="s1-t2" name="TC02 - Simulação com Matricula Válida: 24-54-XI">
+<kw name="Open Browser" library="SeleniumLibrary" type="setup">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${fidelidade}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20210404 16:07:21.238" level="INFO">Opening browser 'Chrome' to base url 'https://www.fidelidade.pt/PT/particulares/Auto/Simuladores/Automovel/Paginas/default.aspx'.</msg>
+<status status="PASS" starttime="20210404 16:07:21.237" endtime="20210404 16:07:31.587"></status>
+</kw>
+<kw name="Inciando o Teste" library="setup">
+<kw name="Validação de Página Principal Carregada" library="setup">
+<kw name="Aguardar pelo Elemento Iframe" library="setup">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:31.591" endtime="20210404 16:07:31.986"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:31.591" endtime="20210404 16:07:31.987"></status>
+</kw>
+<kw name="Selecionar o Iframe" library="setup">
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<msg timestamp="20210404 16:07:31.989" level="INFO">Selecting frame 'xpath://*[@id='Simulator']'.</msg>
+<status status="PASS" starttime="20210404 16:07:31.988" endtime="20210404 16:07:32.220"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:31.987" endtime="20210404 16:07:32.220"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>css:.Bold</arg>
+</arguments>
+<msg timestamp="20210404 16:07:32.268" level="INFO">Current page contains element 'css:.Bold'.</msg>
+<status status="PASS" starttime="20210404 16:07:32.220" endtime="20210404 16:07:32.268"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Qual é a sua matrícula?</arg>
+</arguments>
+<msg timestamp="20210404 16:07:32.656" level="INFO">Current page contains text 'Qual é a sua matrícula?'.</msg>
+<status status="PASS" starttime="20210404 16:07:32.269" endtime="20210404 16:07:32.657"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:31.590" endtime="20210404 16:07:32.657"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:31.589" endtime="20210404 16:07:32.657"></status>
+</kw>
+<kw name="Buscando a Matricula" library="setup">
+<kw name="Aguardar pelo Elemento Iframe" library="setup">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:32.662" endtime="20210404 16:07:32.741"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:32.661" endtime="20210404 16:07:32.741"></status>
+</kw>
+<kw name="Selecionar o Iframe" library="setup">
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<msg timestamp="20210404 16:07:32.743" level="INFO">Selecting frame 'xpath://*[@id='Simulator']'.</msg>
+<status status="PASS" starttime="20210404 16:07:32.742" endtime="20210404 16:07:32.819"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:32.741" endtime="20210404 16:07:32.819"></status>
+</kw>
+<kw name="Clicar no Campo de Matricula" library="setup">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@class="OSFillParent"]</arg>
+</arguments>
+<msg timestamp="20210404 16:07:32.821" level="INFO">Clicking element 'xpath://input[@class="OSFillParent"]'.</msg>
+<status status="PASS" starttime="20210404 16:07:32.821" endtime="20210404 16:07:33.111"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:32.820" endtime="20210404 16:07:33.112"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:32.660" endtime="20210404 16:07:33.112"></status>
+</kw>
+<kw name="Inserindo a Matricula" library="setup">
+<arguments>
+<arg>${TC02}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@class="OSFillParent"]</arg>
+<arg>${matricula}</arg>
+</arguments>
+<msg timestamp="20210404 16:07:33.118" level="INFO">Typing text '2454XI' into text field 'xpath://input[@class="OSFillParent"]'.</msg>
+<status status="PASS" starttime="20210404 16:07:33.117" endtime="20210404 16:07:33.396"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:33.116" endtime="20210404 16:07:33.396"></status>
+</kw>
+<kw name="Validando a Matricula" library="setup">
+<kw name="Clicar em Seguinte" library="setup">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@value="Seguinte"]</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:33.399" endtime="20210404 16:07:33.512"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>xpath://input[@disabled="disabled"]</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:33.512" endtime="20210404 16:07:35.063"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@value="Seguinte"]</arg>
+</arguments>
+<msg timestamp="20210404 16:07:35.064" level="INFO">Clicking element 'xpath://*[@value="Seguinte"]'.</msg>
+<status status="PASS" starttime="20210404 16:07:35.063" endtime="20210404 16:07:35.266"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:33.398" endtime="20210404 16:07:35.267"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:33.398" endtime="20210404 16:07:35.267"></status>
+</kw>
+<kw name="Validação de Matricula Válida" library="setup">
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>xpath://input[@disabled="disabled"]</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:35.276" endtime="20210404 16:07:35.428"></status>
+</kw>
+<kw name="Page Should Not Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<arguments>
+<arg>xpath://input[@disabled="disabled"]</arg>
+</arguments>
+<msg timestamp="20210404 16:07:35.447" level="INFO">Current page does not contain element 'xpath://input[@disabled="disabled"]'.</msg>
+<status status="PASS" starttime="20210404 16:07:35.428" endtime="20210404 16:07:35.447"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:35.276" endtime="20210404 16:07:35.448"></status>
+</kw>
+<kw name="Validação da Página de Cotação de Seguro" library="setup">
+<kw name="Aguardar a Página por 2s" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210404 16:07:37.465" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210404 16:07:35.451" endtime="20210404 16:07:37.465"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:35.450" endtime="20210404 16:07:37.465"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@class='HeaderContainer ResultsHeader']</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:37.465" endtime="20210404 16:07:40.275"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath://*[@class='HeaderContainer ResultsHeader']</arg>
+</arguments>
+<msg timestamp="20210404 16:07:40.347" level="INFO">Current page contains element 'xpath://*[@class='HeaderContainer ResultsHeader']'.</msg>
+<status status="PASS" starttime="20210404 16:07:40.276" endtime="20210404 16:07:40.347"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:35.449" endtime="20210404 16:07:40.348"></status>
+</kw>
+<kw name="Validação Cotação Matrícula 24-54-XI" library="setup">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Este é um exemplo de pré-simulação para o veículo FORD Fiesta Diesel</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:40.350" endtime="20210404 16:07:40.396"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Este é um exemplo de pré-simulação para o veículo FORD Fiesta Diesel</arg>
+</arguments>
+<msg timestamp="20210404 16:07:40.716" level="INFO">Current page contains text 'Este é um exemplo de pré-simulação para o veículo FORD Fiesta Diesel'.</msg>
+<status status="PASS" starttime="20210404 16:07:40.396" endtime="20210404 16:07:40.716"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:40.349" endtime="20210404 16:07:40.717"></status>
+</kw>
+<kw name="Finalizando o Teste" library="setup">
+<kw name="Tirar Print da Tela" library="setup">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210404 16:07:41.045" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210404 16:07:40.718" endtime="20210404 16:07:41.045"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:40.718" endtime="20210404 16:07:41.046"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:40.717" endtime="20210404 16:07:41.046"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210404 16:07:41.047" endtime="20210404 16:07:43.740"></status>
+</kw>
+<tags>
+<tag>TC02 - Matricula Válida: 24-54-XI</tag>
+</tags>
+<status status="PASS" starttime="20210404 16:07:21.228" endtime="20210404 16:07:43.741" critical="yes"></status>
+</test>
+<test id="s1-t3" name="TC03 - Simulação com Matricula Válida: 22-HT-53">
+<kw name="Open Browser" library="SeleniumLibrary" type="setup">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${fidelidade}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20210404 16:07:43.767" level="INFO">Opening browser 'Chrome' to base url 'https://www.fidelidade.pt/PT/particulares/Auto/Simuladores/Automovel/Paginas/default.aspx'.</msg>
+<status status="PASS" starttime="20210404 16:07:43.766" endtime="20210404 16:07:54.196"></status>
+</kw>
+<kw name="Inciando o Teste" library="setup">
+<kw name="Validação de Página Principal Carregada" library="setup">
+<kw name="Aguardar pelo Elemento Iframe" library="setup">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:54.200" endtime="20210404 16:07:54.304"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:54.200" endtime="20210404 16:07:54.305"></status>
+</kw>
+<kw name="Selecionar o Iframe" library="setup">
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<msg timestamp="20210404 16:07:54.306" level="INFO">Selecting frame 'xpath://*[@id='Simulator']'.</msg>
+<status status="PASS" starttime="20210404 16:07:54.306" endtime="20210404 16:07:54.448"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:54.305" endtime="20210404 16:07:54.448"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>css:.Bold</arg>
+</arguments>
+<msg timestamp="20210404 16:07:54.485" level="INFO">Current page contains element 'css:.Bold'.</msg>
+<status status="PASS" starttime="20210404 16:07:54.449" endtime="20210404 16:07:54.485"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Qual é a sua matrícula?</arg>
+</arguments>
+<msg timestamp="20210404 16:07:54.618" level="INFO">Current page contains text 'Qual é a sua matrícula?'.</msg>
+<status status="PASS" starttime="20210404 16:07:54.485" endtime="20210404 16:07:54.618"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:54.199" endtime="20210404 16:07:54.618"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:54.198" endtime="20210404 16:07:54.619"></status>
+</kw>
+<kw name="Buscando a Matricula" library="setup">
+<kw name="Aguardar pelo Elemento Iframe" library="setup">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:54.621" endtime="20210404 16:07:54.658"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:54.620" endtime="20210404 16:07:54.658"></status>
+</kw>
+<kw name="Selecionar o Iframe" library="setup">
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<msg timestamp="20210404 16:07:54.659" level="INFO">Selecting frame 'xpath://*[@id='Simulator']'.</msg>
+<status status="PASS" starttime="20210404 16:07:54.659" endtime="20210404 16:07:54.725"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:54.658" endtime="20210404 16:07:54.725"></status>
+</kw>
+<kw name="Clicar no Campo de Matricula" library="setup">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@class="OSFillParent"]</arg>
+</arguments>
+<msg timestamp="20210404 16:07:54.727" level="INFO">Clicking element 'xpath://input[@class="OSFillParent"]'.</msg>
+<status status="PASS" starttime="20210404 16:07:54.726" endtime="20210404 16:07:55.146"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:54.726" endtime="20210404 16:07:55.146"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:54.619" endtime="20210404 16:07:55.146"></status>
+</kw>
+<kw name="Inserindo a Matricula" library="setup">
+<arguments>
+<arg>${TC03}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@class="OSFillParent"]</arg>
+<arg>${matricula}</arg>
+</arguments>
+<msg timestamp="20210404 16:07:55.149" level="INFO">Typing text '22HT53' into text field 'xpath://input[@class="OSFillParent"]'.</msg>
+<status status="PASS" starttime="20210404 16:07:55.148" endtime="20210404 16:07:55.324"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:55.147" endtime="20210404 16:07:55.324"></status>
+</kw>
+<kw name="Validando a Matricula" library="setup">
+<kw name="Clicar em Seguinte" library="setup">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@value="Seguinte"]</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:55.326" endtime="20210404 16:07:55.360"></status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>xpath://input[@disabled="disabled"]</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:55.360" endtime="20210404 16:07:58.008"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@value="Seguinte"]</arg>
+</arguments>
+<msg timestamp="20210404 16:07:58.008" level="INFO">Clicking element 'xpath://*[@value="Seguinte"]'.</msg>
+<status status="PASS" starttime="20210404 16:07:58.008" endtime="20210404 16:07:58.161"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:55.326" endtime="20210404 16:07:58.161"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:55.325" endtime="20210404 16:07:58.165"></status>
+</kw>
+<kw name="Validação de Matricula Válida" library="setup">
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<arguments>
+<arg>xpath://input[@disabled="disabled"]</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:07:58.180" endtime="20210404 16:07:58.195"></status>
+</kw>
+<kw name="Page Should Not Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is not found on the current page.</doc>
+<arguments>
+<arg>xpath://input[@disabled="disabled"]</arg>
+</arguments>
+<msg timestamp="20210404 16:07:58.325" level="INFO">Current page does not contain element 'xpath://input[@disabled="disabled"]'.</msg>
+<status status="PASS" starttime="20210404 16:07:58.196" endtime="20210404 16:07:58.325"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:58.179" endtime="20210404 16:07:58.325"></status>
+</kw>
+<kw name="Validação Cotação Matrícula 22-HT-53" library="setup">
+<kw name="Aguardar a Página por 2s" library="setup">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210404 16:08:00.331" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210404 16:07:58.327" endtime="20210404 16:08:00.331"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:58.327" endtime="20210404 16:08:00.331"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Este é um exemplo de pré-simulação para o veículo RENAULT Clio III Break Diesel</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:08:00.332" endtime="20210404 16:08:03.286"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Este é um exemplo de pré-simulação para o veículo RENAULT Clio III Break Diesel</arg>
+</arguments>
+<msg timestamp="20210404 16:08:03.859" level="INFO">Current page contains text 'Este é um exemplo de pré-simulação para o veículo RENAULT Clio III Break Diesel'.</msg>
+<status status="PASS" starttime="20210404 16:08:03.286" endtime="20210404 16:08:03.860"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:07:58.326" endtime="20210404 16:08:03.860"></status>
+</kw>
+<kw name="Finalizando o Teste" library="setup">
+<kw name="Tirar Print da Tela" library="setup">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210404 16:08:04.159" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210404 16:08:03.862" endtime="20210404 16:08:04.159"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:03.861" endtime="20210404 16:08:04.160"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:03.861" endtime="20210404 16:08:04.160"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210404 16:08:04.161" endtime="20210404 16:08:06.602"></status>
+</kw>
+<tags>
+<tag>TC03 - Matricula Válida: 22-HT-53</tag>
+</tags>
+<status status="PASS" starttime="20210404 16:07:43.764" endtime="20210404 16:08:06.603" critical="yes"></status>
+</test>
+<test id="s1-t4" name="TC04 - Tentativa de Acesso com a Matricula Inválida: ZZ-AA-00">
+<kw name="Open Browser" library="SeleniumLibrary" type="setup">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${fidelidade}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20210404 16:08:06.608" level="INFO">Opening browser 'Chrome' to base url 'https://www.fidelidade.pt/PT/particulares/Auto/Simuladores/Automovel/Paginas/default.aspx'.</msg>
+<status status="PASS" starttime="20210404 16:08:06.607" endtime="20210404 16:08:16.923"></status>
+</kw>
+<kw name="Inciando o Teste" library="setup">
+<kw name="Validação de Página Principal Carregada" library="setup">
+<kw name="Aguardar pelo Elemento Iframe" library="setup">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:08:16.930" endtime="20210404 16:08:17.119"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:16.929" endtime="20210404 16:08:17.120"></status>
+</kw>
+<kw name="Selecionar o Iframe" library="setup">
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<msg timestamp="20210404 16:08:17.121" level="INFO">Selecting frame 'xpath://*[@id='Simulator']'.</msg>
+<status status="PASS" starttime="20210404 16:08:17.121" endtime="20210404 16:08:17.307"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:17.120" endtime="20210404 16:08:17.308"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>css:.Bold</arg>
+</arguments>
+<msg timestamp="20210404 16:08:17.337" level="INFO">Current page contains element 'css:.Bold'.</msg>
+<status status="PASS" starttime="20210404 16:08:17.308" endtime="20210404 16:08:17.338"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Qual é a sua matrícula?</arg>
+</arguments>
+<msg timestamp="20210404 16:08:17.495" level="INFO">Current page contains text 'Qual é a sua matrícula?'.</msg>
+<status status="PASS" starttime="20210404 16:08:17.338" endtime="20210404 16:08:17.495"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:16.927" endtime="20210404 16:08:17.496"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:16.926" endtime="20210404 16:08:17.496"></status>
+</kw>
+<kw name="Buscando a Matricula" library="setup">
+<kw name="Aguardar pelo Elemento Iframe" library="setup">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:08:17.504" endtime="20210404 16:08:17.574"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:17.503" endtime="20210404 16:08:17.575"></status>
+</kw>
+<kw name="Selecionar o Iframe" library="setup">
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<msg timestamp="20210404 16:08:17.576" level="INFO">Selecting frame 'xpath://*[@id='Simulator']'.</msg>
+<status status="PASS" starttime="20210404 16:08:17.576" endtime="20210404 16:08:17.618"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:17.575" endtime="20210404 16:08:17.619"></status>
+</kw>
+<kw name="Clicar no Campo de Matricula" library="setup">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@class="OSFillParent"]</arg>
+</arguments>
+<msg timestamp="20210404 16:08:17.620" level="INFO">Clicking element 'xpath://input[@class="OSFillParent"]'.</msg>
+<status status="PASS" starttime="20210404 16:08:17.620" endtime="20210404 16:08:17.911"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:17.619" endtime="20210404 16:08:17.912"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:17.502" endtime="20210404 16:08:17.912"></status>
+</kw>
+<kw name="Inserindo a Matricula" library="setup">
+<arguments>
+<arg>${TC04}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@class="OSFillParent"]</arg>
+<arg>${matricula}</arg>
+</arguments>
+<msg timestamp="20210404 16:08:17.915" level="INFO">Typing text 'ZZAA00' into text field 'xpath://input[@class="OSFillParent"]'.</msg>
+<status status="PASS" starttime="20210404 16:08:17.914" endtime="20210404 16:08:18.053"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:17.913" endtime="20210404 16:08:18.054"></status>
+</kw>
+<kw name="Validação de Matricula Inválida" library="setup">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://input[@disabled="disabled"]</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:08:18.055" endtime="20210404 16:08:18.094"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath://input[@disabled="disabled"]</arg>
+</arguments>
+<msg timestamp="20210404 16:08:18.103" level="INFO">Current page contains element 'xpath://input[@disabled="disabled"]'.</msg>
+<status status="PASS" starttime="20210404 16:08:18.094" endtime="20210404 16:08:18.104"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:18.054" endtime="20210404 16:08:18.104"></status>
+</kw>
+<kw name="Finalizando o Teste" library="setup">
+<kw name="Tirar Print da Tela" library="setup">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210404 16:08:18.373" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210404 16:08:18.105" endtime="20210404 16:08:18.373"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:18.105" endtime="20210404 16:08:18.374"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:18.104" endtime="20210404 16:08:18.374"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210404 16:08:18.375" endtime="20210404 16:08:22.077"></status>
+</kw>
+<tags>
+<tag>TC04 - Matricula Inválida: ZZ-AA-00</tag>
+</tags>
+<status status="PASS" starttime="20210404 16:08:06.605" endtime="20210404 16:08:22.078" critical="yes"></status>
+</test>
+<test id="s1-t5" name="TC05 - Tentativa de Acesso com a Matricula Vazia">
+<kw name="Open Browser" library="SeleniumLibrary" type="setup">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${fidelidade}</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20210404 16:08:22.082" level="INFO">Opening browser 'Chrome' to base url 'https://www.fidelidade.pt/PT/particulares/Auto/Simuladores/Automovel/Paginas/default.aspx'.</msg>
+<status status="PASS" starttime="20210404 16:08:22.081" endtime="20210404 16:08:32.025"></status>
+</kw>
+<kw name="Inciando o Teste" library="setup">
+<kw name="Validação de Página Principal Carregada" library="setup">
+<kw name="Aguardar pelo Elemento Iframe" library="setup">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:08:32.028" endtime="20210404 16:08:32.245"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:32.028" endtime="20210404 16:08:32.245"></status>
+</kw>
+<kw name="Selecionar o Iframe" library="setup">
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<msg timestamp="20210404 16:08:32.247" level="INFO">Selecting frame 'xpath://*[@id='Simulator']'.</msg>
+<status status="PASS" starttime="20210404 16:08:32.246" endtime="20210404 16:08:32.412"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:32.246" endtime="20210404 16:08:32.413"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>css:.Bold</arg>
+</arguments>
+<msg timestamp="20210404 16:08:32.435" level="INFO">Current page contains element 'css:.Bold'.</msg>
+<status status="PASS" starttime="20210404 16:08:32.413" endtime="20210404 16:08:32.436"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Qual é a sua matrícula?</arg>
+</arguments>
+<msg timestamp="20210404 16:08:32.580" level="INFO">Current page contains text 'Qual é a sua matrícula?'.</msg>
+<status status="PASS" starttime="20210404 16:08:32.436" endtime="20210404 16:08:32.580"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:32.027" endtime="20210404 16:08:32.580"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:32.026" endtime="20210404 16:08:32.581"></status>
+</kw>
+<kw name="Buscando a Matricula" library="setup">
+<kw name="Aguardar pelo Elemento Iframe" library="setup">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:08:32.583" endtime="20210404 16:08:32.654"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:32.583" endtime="20210404 16:08:32.655"></status>
+</kw>
+<kw name="Selecionar o Iframe" library="setup">
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>xpath://*[@id='Simulator']</arg>
+</arguments>
+<msg timestamp="20210404 16:08:32.657" level="INFO">Selecting frame 'xpath://*[@id='Simulator']'.</msg>
+<status status="PASS" starttime="20210404 16:08:32.656" endtime="20210404 16:08:32.712"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:32.656" endtime="20210404 16:08:32.712"></status>
+</kw>
+<kw name="Clicar no Campo de Matricula" library="setup">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@class="OSFillParent"]</arg>
+</arguments>
+<msg timestamp="20210404 16:08:32.714" level="INFO">Clicking element 'xpath://input[@class="OSFillParent"]'.</msg>
+<status status="PASS" starttime="20210404 16:08:32.713" endtime="20210404 16:08:32.954"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:32.713" endtime="20210404 16:08:32.954"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:32.582" endtime="20210404 16:08:32.954"></status>
+</kw>
+<kw name="Inserindo a Matricula" library="setup">
+<arguments>
+<arg>${TC05}</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://input[@class="OSFillParent"]</arg>
+<arg>${matricula}</arg>
+</arguments>
+<msg timestamp="20210404 16:08:32.959" level="INFO">Typing text '' into text field 'xpath://input[@class="OSFillParent"]'.</msg>
+<status status="PASS" starttime="20210404 16:08:32.958" endtime="20210404 16:08:33.064"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:32.957" endtime="20210404 16:08:33.065"></status>
+</kw>
+<kw name="Validação de Matricula Inválida" library="setup">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>xpath://input[@disabled="disabled"]</arg>
+</arguments>
+<status status="PASS" starttime="20210404 16:08:33.067" endtime="20210404 16:08:33.112"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>xpath://input[@disabled="disabled"]</arg>
+</arguments>
+<msg timestamp="20210404 16:08:33.125" level="INFO">Current page contains element 'xpath://input[@disabled="disabled"]'.</msg>
+<status status="PASS" starttime="20210404 16:08:33.112" endtime="20210404 16:08:33.126"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:33.066" endtime="20210404 16:08:33.126"></status>
+</kw>
+<kw name="Finalizando o Teste" library="setup">
+<kw name="Tirar Print da Tela" library="setup">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210404 16:08:33.401" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210404 16:08:33.128" endtime="20210404 16:08:33.401"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:33.127" endtime="20210404 16:08:33.401"></status>
+</kw>
+<status status="PASS" starttime="20210404 16:08:33.127" endtime="20210404 16:08:33.402"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210404 16:08:33.403" endtime="20210404 16:08:37.185"></status>
+</kw>
+<tags>
+<tag>TC05 - Matricula Vazia</tag>
+</tags>
+<status status="PASS" starttime="20210404 16:08:22.080" endtime="20210404 16:08:37.186" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210404 16:06:57.688" endtime="20210404 16:08:37.195"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0">Critical Tests</stat>
+<stat pass="5" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">TC01 - Matricula Válida: 05-DE-82</stat>
+<stat pass="1" fail="0">TC02 - Matricula Válida: 24-54-XI</stat>
+<stat pass="1" fail="0">TC03 - Matricula Válida: 22-HT-53</stat>
+<stat pass="1" fail="0">TC04 - Matricula Inválida: ZZ-AA-00</stat>
+<stat pass="1" fail="0">TC05 - Matricula Vazia</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" id="s1" name="Casos">Casos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
